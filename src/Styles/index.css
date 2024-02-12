@@ -1,4 +1,33 @@
+@font-face {
+  font-family: RedHatDisplay;
+  src: url("../Assets/Fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: GlitchGoblin;
+  src: url("../Assets/Fonts/GlitchGoblin/GlitchGoblin.ttf");
+}
+:root {
+  --blue: #5267D3;
+  --white: aliceblue;
+}
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#root {
+  background-color: var(--white);
+  border: 3px solid black;
+  border-radius: 30px;
+}
+/* Emulate mobile */
+/* Remove after mobile dev */
+#root {
+  height: 800px;
+  width: 480px;
+  overflow: hidden
 }
