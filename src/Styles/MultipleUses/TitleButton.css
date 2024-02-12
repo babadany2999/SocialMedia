@@ -1,0 +1,19 @@
+.TitleButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.TitleButton-Left {
+    left: 20px;
+}
+.TitleButton-Right {
+    right: 20px;
+}
+.TitleButton > img {
+    object-fit: contain;
+    width: inherit;
+    height: inherit;
+}

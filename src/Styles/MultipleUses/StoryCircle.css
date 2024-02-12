@@ -1,0 +1,33 @@
+.StoryCircle {
+    width: 70px;
+    height: 70px;
+    margin: 0 15px;
+    border-radius: 50%;
+    border: 3px solid rgb(100, 100, 100);
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    box-sizing: border-box;
+}
+.StoryCircle-Inner {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+}
+.StoryCircle-Self {
+    border: 2px solid rgb(100, 100, 100);
+}
+.StoryCircle-Self > img {
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+}
+.StoryCircle-Unread {
+    border: 3px solid var(--blue);
+}

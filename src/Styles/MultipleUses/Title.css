@@ -1,0 +1,13 @@
+.Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.Title > h1 {
+    font-weight: 900;
+  font-family: GlitchGoblin;
+  text-transform: uppercase;
+  font-size: 40px;
+}

@@ -8,7 +8,6 @@
 }
 :root {
   --blue: #5267D3;
-  --white: aliceblue;
 }
 body {
   margin: 0;
@@ -20,7 +19,7 @@ body {
   height: 100vh;
 }
 #root {
-  background-color: var(--white);
+  background-color: white;
   border: 3px solid black;
   border-radius: 30px;
 }

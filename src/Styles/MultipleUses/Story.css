@@ -1,0 +1,9 @@
+.Story {
+    width: 200%;
+    /* background-color: purple; */
+    height: 50px;
+    display: inline-flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding: 10px 0;
+}
