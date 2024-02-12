@@ -1,0 +1,5 @@
+{
+    "verbose": true,
+    "ignore": [".gitignore", "**/node_modules"],
+    "ext": "ts, tsx, json"
+}
