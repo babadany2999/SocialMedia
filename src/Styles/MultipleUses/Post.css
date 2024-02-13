@@ -1,0 +1,96 @@
+.Post {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+
+    -webkit-box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+}
+.Post-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.Post-Header-Left {
+    display: flex;
+    align-items: center;
+}
+.Post-Header-Left > img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.Post-Header-Left > span {
+    font-family: RedHatDisplay;
+    font-weight: 700;
+    font-size: 12px;
+}
+.Post-Header > button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.Post-Header > button > img {
+    width: inherit;
+    height: inherit;
+}
+.Post-Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Post-Main > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+.Post-Main > span {
+    float: left;
+    width: 100%;
+    font-family: RedHatDisplay;
+    font-size: 12px;
+    font-weight: 500;
+}
+.Post-Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.Post-Footer-Comments,
+.Post-Footer-Likes {
+    display: flex;
+    align-items: center;
+    font-family: RedHatDisplay;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+.Post-Footer-Comments > span,
+.Post-Footer-Likes > span {
+    margin: 0 10px;
+}
+.Post-Footer-Comments > img,
+.Post-Footer-Likes > img {
+    width: 12px;
+    height: 12px;
+}

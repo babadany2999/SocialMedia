@@ -20,13 +20,17 @@ body {
 }
 #root {
   background-color: white;
-  border: 3px solid black;
-  border-radius: 30px;
+  /* width: inherit; height: inherit; */
 }
 /* Emulate mobile */
 /* Remove after mobile dev */
 #root {
   height: 800px;
   width: 480px;
-  overflow: hidden
+  border: 3px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+}
+* {
+  scroll-behavior: smooth;
 }
