@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     element: <SignIn/>
   },
   {
-    path: "/explore",
+    path: "/explore/:type?",
     element: <Explore/>
   }
 ])

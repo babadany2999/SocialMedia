@@ -1,0 +1,22 @@
+.NavigationTop {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.NavigationTop > button {
+    flex: 0.2;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-family: RedHatDisplay;
+    font-size: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.NavigationTop-Active {
+    border-bottom: 1px solid red!important;
+}
