@@ -26,7 +26,8 @@ const Main = () => {
             icon: humanOne,
             handle: "myhandle",
             media:  postOne,
-            text: "Look at how mysterous I am! You would never guess I like to pee in the shower :D"
+            text: "Look at how mysterous I am! You would never guess I like to pee in the shower :D",
+            playable: true
         }}/>
         <NavigationButton/>
     </main>

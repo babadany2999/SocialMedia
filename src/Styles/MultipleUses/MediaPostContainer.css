@@ -1,0 +1,9 @@
+.MediaPostContainer {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 0;
+}

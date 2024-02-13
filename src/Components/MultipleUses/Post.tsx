@@ -2,12 +2,14 @@ import "../../Styles/MultipleUses/Post.css";
 import dotsIcon from '../../Assets/Images/dots.svg';
 import commentIcon from '../../Assets/Images/comment.svg';
 import heartIcon from '../../Assets/Images/heart.svg';
+import playIcon from '../../Assets/Images/play.svg';
 
 interface IPost {
     icon: string;
     handle: string;
     media?: string;
     text?: string;
+    playable?: true;
 }
 
 const Post = ({ctx}: {ctx: IPost}) => {
@@ -22,7 +24,11 @@ const Post = ({ctx}: {ctx: IPost}) => {
             </button>
         </div>
         <div className="Post-Main">
-            <img src={ctx.media} alt="/"/>
+            <div className="Post-Main-Media">
+                <img src={ctx.media} alt="/"/>
+                {ctx.playable ? 
+                <img src={playIcon} alt="" className="Post-Main-Media-Playable"></img> : ""}
+            </div>
             <span>{ctx.text}</span>
         </div>
         <div className="Post-Footer">
