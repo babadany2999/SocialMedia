@@ -8,6 +8,7 @@ import {
 import Main from './Main';
 import SignUp from './Credential/SignUp';
 import SignIn from './Credential/SignIn';
+import Explore from './Explore';
 
 // router
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/sign-in",
     element: <SignIn/>
+  },
+  {
+    path: "/explore",
+    element: <Explore/>
   }
 ])
 

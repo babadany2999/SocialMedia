@@ -1,0 +1,29 @@
+.SearchBar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SearchBar > img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    left: calc(10% + 10px);
+    opacity: 0.3;
+}
+.SearchBar > input {
+    width: 80%;
+    background-color: rgb(240, 240, 240);
+    padding: 15px 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: RedHatDisplay;
+    font-size: 15px;
+}
+.SearchBar > input::placeholder {
+    opacity: 0.3;
+}
