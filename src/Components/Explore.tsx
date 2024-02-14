@@ -6,6 +6,7 @@ import SearchBar from "./MultipleUses/SearchBar";
 import Title from "./MultipleUses/Title";
 import { IMediaPost } from "./MultipleUses/MediaPost";
 import postOne from '../Assets/Images/posts/postOne.jpg';
+import NavigationButton from "./MultipleUses/NavigationButton";
 
 const Explore = () => {
 
@@ -31,6 +32,7 @@ const Explore = () => {
         <SearchBar/>
         <NavigationTop/>
         <MediaPostContainer ctx={mediaPosts}/>
+        <NavigationButton/>
     </main>
 }
  
