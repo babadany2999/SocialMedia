@@ -20,6 +20,10 @@ const Explore = () => {
         }
     ]);
 
+    // const [textPosts, setTextPosts] = useState<ITextPost[]>([
+        
+    // ])
+
     return <main className="Explore">
         <Title ctx={{
             text: "Explore",
