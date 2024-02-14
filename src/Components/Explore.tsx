@@ -9,6 +9,7 @@ import postOne from '../Assets/Images/posts/postOne.jpg';
 import NavigationButton from "./MultipleUses/NavigationButton";
 import TextPost, { ITextPost } from "./MultipleUses/TextPost";
 import humanOne from '../Assets/Images/humans/human1.jpg';
+import StickyHeader from "./MultipleUses/StickyHeader";
 
 const Explore = () => {
 
@@ -23,6 +24,17 @@ const Explore = () => {
         }
     ]);
 
+    const [mediaPosts2, setMediaPosts2] = useState<IMediaPost[]>([
+        {
+            media: postOne,
+            bigFlex: true
+        },
+        {
+            playable: true,
+            media: postOne
+        }
+    ])
+
     const [textPosts, setTextPosts] = useState<ITextPost[]>([
         {
             icon: humanOne,
@@ -33,14 +45,19 @@ const Explore = () => {
     ])
 
     return <main className="Explore">
-        <Title ctx={{
+        <StickyHeader ctx={<>
+            <Title ctx={{
             text: "Explore",
-        }}/>
-        <SearchBar/>
-        <NavigationTop/>
-        <MediaPostContainer ctx={mediaPosts}/>
-        {textPosts.map((post, index) => 
-        <TextPost key={index} ctx={{icon: post.icon, handle: post.handle, text: post.text}}/>)}
+            }}/>
+            <SearchBar/>
+            <NavigationTop/>
+        </>}/>
+        <main>
+            <MediaPostContainer ctx={mediaPosts}/>
+            {textPosts.map((post, index) => 
+            <TextPost key={index} ctx={{icon: post.icon, handle: post.handle, text: post.text}}/>)}
+            <MediaPostContainer ctx={mediaPosts2}/>
+        </main>
         <NavigationButton/>
     </main>
 }
