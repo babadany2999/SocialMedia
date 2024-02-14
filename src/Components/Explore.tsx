@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../Styles/Explore.css";
+import "../Styles/MainPageStyles.css";
 import MediaPostContainer from "./MultipleUses/MediaPostContainer";
 import NavigationTop from "./MultipleUses/NavigationTop";
 import SearchBar from "./MultipleUses/SearchBar";
@@ -44,7 +45,7 @@ const Explore = () => {
         }
     ])
 
-    return <main className="Explore">
+    return <div className="Explore MainPageStyles">
         <StickyHeader ctx={<>
             <Title ctx={{
             text: "Explore",
@@ -59,7 +60,7 @@ const Explore = () => {
             <MediaPostContainer ctx={mediaPosts2}/>
         </main>
         <NavigationButton/>
-    </main>
+    </div>
 }
  
 export default Explore;

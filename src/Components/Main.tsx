@@ -1,4 +1,5 @@
 import '../Styles/Main.css';
+import "../Styles/MainPageStyles.css";
 import Title from './MultipleUses/Title';
 import bellIcon from '../Assets/Images/bell.svg';
 import Story from './MultipleUses/Story';
@@ -11,7 +12,7 @@ import NavigationButton from './MultipleUses/NavigationButton';
 import StickyHeader from './MultipleUses/StickyHeader';
 
 const Main = () => {
-    return <div className="Main">
+    return <div className="Main MainPageStyles">
         <StickyHeader ctx={<><Title ctx={{text: "x", button: {
             icon: bellIcon,
             right: true
