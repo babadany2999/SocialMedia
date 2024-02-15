@@ -6,6 +6,8 @@ import arrowLeft from '../Assets/Images/arrow-left.svg';
 import ImageLoader from "./MultipleUses/ImageLoader";
 import { useEffect, useState } from "react";
 import ImageSettings, { IMediaSettings } from "./MultipleUses/ImageSettings";
+import SlideEditor from "./MultipleUses/SlideEditor";
+import CredentialFormButton from "./Credential/Components/CredentialFormButton";
 
 interface ICreatePostChoose {
     handleClick: () => void;
@@ -70,7 +72,14 @@ const CreatePost = () => {
                 setActiveMediaSetting: setActiveMediaSetting,
                 activeMediaSetting: activeMediaSetting
             }}/>}
+            {postType && postType !== "text" &&
+            <SlideEditor/>}
         </main>
+        <div className="CreatePost-Button">
+            <CredentialFormButton ctx={{
+            text: "Continue"
+            }}/>
+        </div>
     </div>
 }
  

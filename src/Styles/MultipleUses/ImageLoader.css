@@ -6,7 +6,7 @@
     align-items: center;
 }
 .ImageLoader > img {
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
 .ImageLoader-Upload {

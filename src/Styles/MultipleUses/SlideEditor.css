@@ -1,0 +1,9 @@
+.SlideEditor {
+    width: 80%;
+}
+.SlideEditor > input {
+    width: 100%;
+}
+.SlideEditor > input:focus {
+    outline: none;
+}
