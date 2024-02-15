@@ -1,0 +1,25 @@
+.ImageLoader {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ImageLoader > img {
+    object-fit: contain;
+    object-position: center;
+}
+.ImageLoader-Upload {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.ImageLoader-Image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+.ImageLoader > input {
+    display: none;
+}

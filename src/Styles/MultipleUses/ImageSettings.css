@@ -1,0 +1,40 @@
+.ImageSettings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.ImageSettings-Buttons {
+    display: inline-flex;
+    align-items: center;
+    width: inherit;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.ImageSettings-Buttons > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0.25;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: 0.25s;
+}
+.ImageSettings-Buttons > div > img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    object-position: center;
+    margin: 5px 0;
+}
+.ImageSettings-Buttons > div > span {
+    font-family: RedHatDisplay;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.ImageSettings-Buttons > div:hover,
+.ImageSettings-Button-Active  {
+    opacity: 1!important;
+}

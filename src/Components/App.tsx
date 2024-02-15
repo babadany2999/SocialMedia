@@ -9,6 +9,7 @@ import Main from './Main';
 import SignUp from './Credential/SignUp';
 import SignIn from './Credential/SignIn';
 import Explore from './Explore';
+import CreatePost from './CreatePost';
 
 // router
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/explore/:type?",
     element: <Explore/>
+  },
+  {
+    path: "/create-post",
+    element: <CreatePost/>
   }
 ])
 
